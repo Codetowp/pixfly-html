@@ -43,7 +43,29 @@
 
 <body>
 
-<!-- BOUTON MENU TAB --> 
+<!--Top Nav content-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <nav>
+  <ul>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Clients</a></li>
+  <li><a href="#">Contact</a></li>
+  
+  </ul>
+  </nav>
+  
+  
+</div><!--Top Nav content-->
+
+<div id="main-block">
+
+
+
+
+
 
 <!-- Header section -->
 <header id="top-header">
@@ -60,17 +82,7 @@
     </div>
   </div>
   
-  <!--Nav-->
-  
-  <nav id="myNav" class="overlay-menu"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <ul class="overlay-content">
-      <li> <a href="#">About</a></li>
-      <li> <a href="#">Services</a></li>
-      <li><a href="#">Clients</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <!--Nav--> 
+
 </header>
 <!-- /Header section --> 
 
@@ -104,7 +116,7 @@
       <div class="clearfix"></div>
     </div>
     <div id="lightbox" class="row">
-      <div class="col-sm-6 col-md-4 col-lg-4 branding">
+      <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 branding">
         <div class="portfolio-item">
           <div class="hover-bg"> <a href="#">
             <div class="hover-text"> <small>APP</small>
@@ -114,7 +126,7 @@
             <img src="img/portfolio/01.jpg" class="img-responsive" alt="..."> </a> </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 photography app">
+      <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 photography app">
         <div class="portfolio-item">
           <div class="hover-bg"> <a href="#">
             <div class="hover-text"> <small>APP</small>
@@ -124,7 +136,7 @@
             <img src="img/portfolio/02.jpg" class="img-responsive" alt="..."> </a> </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 branding">
+      <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 branding">
         <div class="portfolio-item">
           <div class="hover-bg"> <a href="#">
             <div class="hover-text"> <small>APP</small>
@@ -134,7 +146,7 @@
             <img src="img/portfolio/03.jpg" class="img-responsive" alt="..."> </a> </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 branding">
+      <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 branding">
         <div class="portfolio-item">
           <div class="hover-bg"> <a href="#">
             <div class="hover-text"> <small>APP</small>
@@ -144,7 +156,7 @@
             <img src="img/portfolio/04.jpg" class="img-responsive" alt="..."> </a> </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 web">
+      <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 web">
         <div class="portfolio-item">
           <div class="hover-bg"> <a href="#">
             <div class="hover-text"> <small>APP</small>
@@ -154,7 +166,7 @@
             <img src="img/portfolio/05.jpg" class="img-responsive" alt="..."> </a> </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 app">
+      <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 app">
         <div class="portfolio-item">
           <div class="hover-bg"> <a href="#">
             <div class="hover-text"> <small>APP</small>
@@ -164,7 +176,7 @@
             <img src="img/portfolio/06.jpg" class="img-responsive" alt="..."> </a> </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 photography web">
+      <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 photography web">
         <div class="portfolio-item">
           <div class="hover-bg"> <a href="#">
             <div class="hover-text"> <small>APP</small>
@@ -174,7 +186,7 @@
             <img src="img/portfolio/07.jpg" class="img-responsive" alt="..."> </a> </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 web">
+      <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 web">
         <div class="portfolio-item">
           <div class="hover-bg"> <a href="#">
             <div class="hover-text"> <small>APP</small>
@@ -230,6 +242,9 @@
     </div>
   </div>
 </footer>
+</div>
+
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
@@ -246,15 +261,33 @@
 <script src="js/imagesloaded.js"></script> 
 <script src="js/classie.js"></script> 
 <script src="js/AnimOnScroll.js"></script> 
+
+
+
+
+
+
+
+<!-- top menu
+    ================================================== --> 
+
 <script>
 function openNav() {
-    document.getElementById("myNav").style.height = "100%";
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main-block").style.marginRight = "250px";
 }
 
 function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main-block").style.marginRight= "0";
 }
-</script> 
+
+</script>
+
+
+
+
+
 <script>
 
 /*====================================
