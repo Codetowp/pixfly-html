@@ -108,16 +108,31 @@ $(window).resize(function(){
 
     $('#home-banner .content').css({
         position:'relative',
-        left: ($(window).width() - $('#home-banner .content').outerWidth())/3,
-        top: ($(window).height() - $('#home-banner .content ').outerHeight())/3
+        left: ($(window).width() - $('#home-banner .content').outerWidth())/2,
+        top: ($(window).height() - $('#home-banner .content ').outerHeight())/2
     });
 	
 	
-    $('.entry-header .content, #page-banner .content').css({
+	 $('#home-banner.half-height .content').css({
         position:'relative',
-        left: ($(window).width() - $('.entry-header .content, #page-banner .content').outerWidth())/3,
-        top: ($(window).height() - $('.entry-header .content, #page-banner .content ').outerHeight())/3
+        left: ($(window).width() - $('#home-banner.half-height .content').outerWidth())/3,
+        top: ($(window).height() - $('#home-banner.half-height .content ').outerHeight())/3
     });
+	
+	
+    $('.single .entry-header .content, #page-banner .content').css({
+        position:'relative',
+        left: ($(window).width() - $('.single  .entry-header .content, #page-banner .content').outerWidth())/2,
+        top: ($(window).height() - $('.single  .entry-header .content, #page-banner .content ').outerHeight())/2
+    });
+	
+	
+	 $(' #page-banner .content').css({
+        position:'relative',
+        left: ($(window).width() - $(' #page-banner .content').outerWidth())/3,
+        top: ($(window).height() - $(' #page-banner .content ').outerHeight())/3
+    });
+	
 
 });
 
