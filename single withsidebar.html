@@ -42,7 +42,7 @@
 
 </head>
 
-<body class="single ">
+<body class="single with-sidebar">
 <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <nav>
     <ul>
@@ -322,11 +322,13 @@
         
         <!--Search-->
         <section class="widget widget_search  wow fadeInUp">
+         <h2 class="widget-title">search</h2>
           <form>
-            <div class="input-group"> <span class="input-group-btn">
+            <div class="input-group"> 
+              <input class="form-control" type="text" placeholder="Search what you need....">
+              <span class="input-group-btn">
               <button  type="button"><i class="fa  fa-search"></i></button>
               </span>
-              <input class="form-control" type="text" placeholder="Search what you need....">
              </div>
           </form>
         </section>
@@ -351,9 +353,9 @@
           <h2 class="widget-title">Archives</h2>
           <ul >
             <li ><a href="#"> support <span >(01)</span> </a> </li>
-            <li><a href="#"> DESIGN<span >(10)</span> </a></li>
-            <li ><a href="#"> USER INTERFACE<span>(100)</span> </a> </li>
-            <li><a href="#"> Wiki<span >(100)</span> </a></li>
+            <li><a href="#"> DESIGN<span >11</span> </a></li>
+            <li ><a href="#"> USER INTERFACE<span >100</span> </a> </li>
+            <li><a href="#"> Wiki<span >0</span> </a></li>
           </ul>
         </section>
         
@@ -364,10 +366,16 @@
         <section class="widget widget_categories  wow fadeInUp">
           <h2 class="widget-title">category</h2>
           <ul >
-            <li ><a href="#"> Budget </a> </li>
-            <li><a href="#"> Industry </a></li>
-            <li ><a href="#"> Factory </a> </li>
-            <li><a href="#"> Business</a></li>
+            <li ><a href="#"> Budget <span class="badge">01</span> </a> </li>
+            <li><a href="#"> Industry <span class="badge">01</span>  </a></li>
+            <li ><a href="#"> Factory </a> 
+            
+            <ul class="children">
+	<li ><a href="#">USER INTERFACE</a></li>
+    <li ><a href="#">Industry</a></li>
+</ul>
+            </li>
+            <li><a href="#"> Business <span class="badge">01</span></a></li>
           </ul>
         </section>
         
@@ -377,30 +385,56 @@
         
         <section  class="widget  widget_recent_entries  wow fadeInUp ">
           <h2 class="widget-title">Recent posts</h2>
-          <ul class="media-list main-list">
-            <li class="media"> <a class="" href="#"> <img class="media-object" src="img/04-screenshot.jpg" alt="..."> </a>
-              <div class="media-body">
-                <p class="media-heading"><a href="#">Tips For Designing a Business </a> </p>
-              </div>
-            </li>
-            <li class="media"> <a class="" href="#"> <img class="media-object" src="img/03-screenshot.jpg" alt="..."> </a>
-              <div class="media-body">
-                <p class="media-heading"><a href="#">Barbecue Sauce Barbeque</a></p>
-              </div>
-            </li>
-            <li class="media"> <a class="" href="#"> <img class="media-object" src="img/02-screenshot.jpg" alt="..."> </a>
-              <div class="media-body">
-                <p class="media-heading"> <a href="#">What Makes A Hotel Boutique </a></p>
-              </div>
-            </li>
-          </ul>
+          <ul>
+					<li>
+				<a href="#">Hey, it’s great to see you have Free &amp; Simple Contact Form Plugin</a>
+							<span class="post-date">August 25, 2017</span>
+						</li>
+					<li>
+				<a href="#">Hello world!</a>
+							<span class="post-date">May 2, 2017</span>
+						</li>
+					<li>
+				<a href="#">Video Post</a>
+							<span class="post-date">December 8, 2013</span>
+						</li>
+					<li>
+				<a href="#">Status Post</a>
+							<span class="post-date">December 8, 2013</span>
+						</li>
+					<li>
+				<a href="#">Quote Post</a>
+							<span class="post-date">December 8, 2013</span>
+						</li>
+				</ul>
         </section>
+        
+         <!--Recent posts end-->
+        
+        <!--Rss end-->
+        <section id="rss-4" class="widget widget_rss">
+        <h2 class="widget-title"><a class="rsswidget" href="http://www.aweber.com/blog/feed/"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="http://localhost/burstfly/wp-includes/images/rss.png" alt="RSS"></a> <a class="rsswidget" href="https://blog.aweber.com/">Email Marketing Tips</a></h2>
+        <ul>
+        <li><a class="rsswidget" href="https://blog.aweber.com/email-marketing/one-ridiculously-simple-email-thatll-build-loyal-audience-read-share-content.htm">One Ridiculously Simple Email That’ll Get More People to Click Your Content</a> <span class="rss-date">October 6, 2017</span> <cite>Liz Willits</cite></li>
+        <li><a class="rsswidget" href="https://blog.aweber.com/email-marketing/color-theory-for-sign-up-form-design.htm">Color Theory for Sign Up Form Design</a> <span class="rss-date">September 21, 2017</span> <cite>Michael Smith</cite></li>
+        <li><a class="rsswidget" href="https://blog.aweber.com/email-marketing/sending-the-right-email-at-the-right-time-with-aweber.htm">Sending the Right Email at the Right Time with AWeber</a> <span class="rss-date">September 19, 2017</span> <cite>Tom Tate</cite></li>
+        <li><a class="rsswidget" href="https://blog.aweber.com/integrations/new-in-aweber-even-more-apps-that-support-tags.htm">New in AWeber: Even More Apps that Support Tags</a> <span class="rss-date">September 15, 2017</span> <cite>Tom Tate</cite></li>
+        <li><a class="rsswidget" href="https://blog.aweber.com/email-marketing/9-inspiring-sign-up-form-ideas-to-grow-your-email-list.htm">9 Inspiring Sign Up Form Ideas to Grow Your Email List</a> <span class="rss-date">September 15, 2017</span> <cite>Shelby McGuigan</cite></li>
+        <li><a class="rsswidget" href="https://blog.aweber.com/email-marketing/6-ways-to-get-more-email-subscribers-from-your-wordpress-blog.htm">6 Ways to Get More Email Subscribers from Your WordPress Blog</a> <span class="rss-date">September 12, 2017</span> <cite>Shelby McGuigan</cite></li>
+        <li><a class="rsswidget" href="https://blog.aweber.com/email-marketing/cast-your-vote-to-choose-the-next-aweber-email-template-design.htm">Cast Your Vote to Choose the Next AWeber Email Template Design</a> <span class="rss-date">September 7, 2017</span> <cite>Shelby McGuigan</cite></li>
+        <li><a class="rsswidget" href="https://blog.aweber.com/email-marketing/speed-up-your-email-creation-with-awebers-drag-drop-email-builder.htm">Speed Up Your Email Creation with AWeber’s Drag &amp; Drop Email Builder</a> <span class="rss-date">September 6, 2017</span> <cite>Tom Tate</cite></li>
+        <li><a class="rsswidget" href="https://blog.aweber.com/email-marketing/create-buyer-persona-5-simple-steps.htm">Create Your Buyer Persona in 5 Simple Steps</a> <span class="rss-date">September 5, 2017</span> <cite>Shelby McGuigan</cite></li>
+        <li><a class="rsswidget" href="https://blog.aweber.com/email-marketing/five-ways-increase-deliverability-boosting-engagement.htm">5 Ways to Increase Your Deliverability by Boosting Email Engagement</a> <span class="rss-date">August 23, 2017</span> <cite>Liz Willits</cite></li>
+        </ul>
+        </section>
+<!--/Rss end-->        
+        
         
         <!--ad -->
         <section class="widget"> <img src="img/ad-250x250.jpg" class="img-responsive"> </section>
         <!--ad end--> 
         
-        <!--Recent posts end-->
+       
         
         <section class="widget widget_social sidebar  wow fadeInUp">
           <h2 class="widget-title">Follow Us</h2>
@@ -437,7 +471,11 @@
         <!--Meta  start-->
         <section id="meta-2" class="widget widget_meta  wow fadeInUp">
           <h2 class="widget-title">Text</h2>
+          <div class="widget-text">
           <p>Subscribe to our free newsletter to be in touch with our new articles. Subscribe to our free newsletter to be in touch with our new articles. Subscribe to our free newsletter to be in touch with our new articles.</p>
+          </div>
+          
+          
         </section>
         
         <!--Meta  end--> 
@@ -454,6 +492,69 @@
         </section>
         
         <!--Meta  end--> 
+        
+            <!--pages start --> 
+        <section id="pages-4" class="widget widget_pages"><h2 class="widget-title">Pages</h2>		<ul>
+			<li class="page_item page-item-5 page_item_has_children"><a href="http://localhost/burstfly/about/">About The Tests</a>
+<ul class="children">
+	<li><a href="#">Clearing Floats</a></li>
+	<li class="page_item page-item-1133"><a href="http://localhost/burstfly/about/page-image-alignment/">Page Image Alignment</a></li>
+	<li class="page_item page-item-1134"><a href="http://localhost/burstfly/about/page-markup-and-formatting/">Page Markup And Formatting</a></li>
+	<li class="page_item page-item-155"><a href="http://localhost/burstfly/about/page-with-comments/">Page with comments</a></li>
+	<li class="page_item page-item-156"><a href="http://localhost/burstfly/about/page-with-comments-disabled/">Page with comments disabled</a></li>
+</ul>
+</li>
+<li class="page_item page-item-703"><a href="http://localhost/burstfly/blog/">Blog</a></li>
+<li class="page_item page-item-1816"><a href="http://localhost/burstfly/cart/">Cart</a></li>
+<li class="page_item page-item-1817"><a href="http://localhost/burstfly/checkout/">Checkout</a></li>
+<li class="page_item page-item-1754"><a href="http://localhost/burstfly/elements/">Elements</a></li>
+<li class="page_item page-item-701 page_item_has_children"><a href="http://localhost/burstfly/">home</a>
+<ul class="children">
+	<li class="page_item page-item-1868"><a href="http://localhost/burstfly/home/hestia-front/">Front Page</a></li>
+</ul>
+</li>
+<li class="page_item page-item-174 page_item_has_children"><a href="http://localhost/burstfly/level-1/">Level 1</a>
+<ul class="children">
+	<li class="page_item page-item-742"><a href="http://localhost/burstfly/level-1/level-2a/">Level 2a</a></li>
+	<li class="page_item page-item-744"><a href="http://localhost/burstfly/level-1/level-2b/">Level 2b</a></li>
+</ul>
+</li>
+<li class="page_item page-item-173 page_item_has_children"><a href="http://localhost/burstfly/level-2/">Level 2</a>
+<ul class="children">
+	<li class="page_item page-item-746"><a href="http://localhost/burstfly/level-2/level-3a/">Level 3a</a></li>
+	<li class="page_item page-item-748"><a href="http://localhost/burstfly/level-2/level-3b/">Level 3b</a></li>
+</ul>
+</li>
+<li class="page_item page-item-172"><a href="http://localhost/burstfly/level-3/">Level 3</a></li>
+<li class="page_item page-item-146"><a href="http://localhost/burstfly/lorem-ipsum/">Lorem Ipsum</a></li>
+<li class="page_item page-item-1818"><a href="http://localhost/burstfly/my-account/">My account</a></li>
+<li class="page_item page-item-733"><a href="http://localhost/burstfly/page-a/">Page A</a></li>
+<li class="page_item page-item-735"><a href="http://localhost/burstfly/page-b/">Page B</a></li>
+<li class="page_item page-item-2"><a href="http://localhost/burstfly/sample-page/">Sample Page</a></li>
+<li class="page_item page-item-1826"><a href="http://localhost/burstfly/sample-page-2/">Sample Page</a></li>
+<li class="page_item page-item-1815"><a href="http://localhost/burstfly/shop/">Shop</a></li>
+<li class="page_item page-item-1752"><a href="http://localhost/burstfly/typography/">Typography</a></li>
+		</ul>
+		</section><!--pages end--> 
+        
+        
+        <!--Menu start-->
+        
+        <section id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">menu</h2><div class="menu-dummy-container"><ul id="menu-dummy" class="menu"><li id="menu-item-1759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1759"><a href="http://localhost/burstfly/elements/">Elements</a>
+<ul class="sub-menu">
+	<li id="menu-item-1859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1859"><a href="http://localhost/burstfly/cart/">Cart</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1860" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1860"><a href="http://localhost/burstfly/shop/">Shop</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-1760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1760"><a href="http://localhost/burstfly/typography/">Typography</a></li>
+<li id="menu-item-1747" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1747"><a href="http://localhost/burstfly/2013/01/11/markup-html-tags-and-formatting/">HTML Markup</a></li>
+<li id="menu-item-1748" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1748"><a href="http://localhost/burstfly/2013/01/10/markup-image-alignment/">Image Markup</a></li>
+<li id="menu-item-1749" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1749"><a href="http://localhost/burstfly/2013/01/09/markup-text-alignment/">Text Markup</a></li>
+</ul></div></section><!--Menu end-->
+        
         
       </aside>
       <!--aside--> 
@@ -540,8 +641,8 @@
 
 <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main-block").style.marginRight = "250px";
+    document.getElementById("mySidenav").style.width = "320px";
+    document.getElementById("main-block").style.marginRight = "320px";
 }
 
 function closeNav() {
