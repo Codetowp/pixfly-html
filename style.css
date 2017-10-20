@@ -3951,6 +3951,7 @@ blockquote p {
 .blog-layout-b article {
 	margin-bottom: 55px;
 	float: left;
+	width:100%;
 }
 .blog-layout-b article .content-block {
 	background: #fff;
@@ -4239,7 +4240,7 @@ blockquote {
 }
  @media (max-width: 603px) {
 aside {
-	padding-left: 0px !important;
+	padding-left: 15px !important;
 }
 .with-sidebar .single-post {
 	padding-right: 8px;
@@ -4262,6 +4263,12 @@ aside {
 .porfolio-page-nav ul li.next-nav {
 	text-align: center;
 }
+
+.portfolio-content h1{font-size:3em;}
+
+.posts-navigation li:first-child {display:block; float:none !important;}
+.posts-navigation li:last-child {display:block; float:none !important;}
+
 }
  @media screen and (max-height: 450px) {
 .sidenav {
