@@ -47,12 +47,49 @@
 <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <nav>
     <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Clients</a></li>
+      <li><span class="company-name">pixfly</span></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Graphics</a>
+        <ul class="sub-menu">
+          <li><a href="#" >All</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Photography</a></li>
+        </ul>
+      </li>
+      <li><a href="#">articts</a>
+        <ul class="sub-menu">
+          <li><a href="#" >All</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Photography</a></li>
+        </ul>
+      </li>
       <li><a href="#">Contact</a></li>
+      <li><a href="#"><i class="fa fa-shopping-cart"></i> Shop</a></li>
     </ul>
   </nav>
+  <hr>
+  <ul class="other-nav">
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Press&amp;Media</a>
+    <li><a href="#">Privacy policy</a></li>
+    <li><a href="#">Terms and conditions</a></li>
+    <li><a href="#">Contact us</a></li>
+  </ul>
+  
+  <!--share -->
+  <div class="share-navs">
+    <ul>
+      <li><i class="fa fa-share-alt"></i></li>
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+      <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+    </ul>
+  </div>
+  <!--/share--> 
+  
 </div>
 <!--Top Nav content-->
 
@@ -78,24 +115,20 @@
   <!-- banner Page
     ==========================================-->
   <Section id="home-banner" >
-    <div class=" wow fdeInUp"  data-wow-duration="1s">
+    <div class=" wow fdeInUp"  data-wow-duration="1s"> 
       
-        <!--image row with content-->
-        <div class="col-md-6 row-with-content" >
+      <!--image row with content-->
+      <div class="col-md-6 row-with-content" >
         <div class="content-row">
-        <h1>Pixfly Studio</h1>
-        <span>Creative Artist</span>
-        <a href="#">See our Works</a>
-        </div>
-        </div><!--/image row with content-->
-        
-        <!--image row  without content-->
-        <div class="col-md-6 row-without-content" style="background-image:url(img/bg-1.jpg);">
-        
-        
-        </div><!--image row without content-->
-        
-   
+          <h1>Pixfly Studio</h1>
+          <span>Creative Artist</span> <a href="#">See our Works</a> </div>
+      </div>
+      <!--/image row with content--> 
+      
+      <!--image row  without content-->
+      <div class="col-md-6 row-without-content" style="background-image:url(img/bg-1.jpg);"> </div>
+      <!--image row without content--> 
+      
     </div>
   </Section>
   
@@ -268,8 +301,8 @@
 
 <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main-block").style.marginRight = "250px";
+    document.getElementById("mySidenav").style.width = "320px";
+    document.getElementById("main-block").style.marginRight = "320px";
 }
 
 function closeNav() {
