@@ -95,7 +95,7 @@ function main() {
     top -menu
     ======================================*/
 
-$('#top-menu.navbar-default li:has(ul)').addClass('menu-item-has-children');
+$('.sidenav nav ul li:has(ul)').addClass('menu-item-has-children');
 
 
 
@@ -106,19 +106,17 @@ $('#top-menu.navbar-default li:has(ul)').addClass('menu-item-has-children');
 
 $(window).resize(function(){
 
-    $('#home-banner .content').css({
+    $('#home-banner .content-row').css({
         position:'relative',
-        left: ($(window).width() - $('#home-banner .content').outerWidth())/2,
-        top: ($(window).height() - $('#home-banner .content ').outerHeight())/2
+        left: ($(window).width() - $('#home-banner .content-row').outerWidth())/2.6,
+        top: ($(window).height() - $('#home-banner .content-row ').outerHeight())/4
     });
 	
 	
-	 $('#home-banner.half-height .content').css({
-        position:'relative',
-        left: ($(window).width() - $('#home-banner.half-height .content').outerWidth())/3,
-        top: ($(window).height() - $('#home-banner.half-height .content ').outerHeight())/3
-    });
 	
+	
+	
+
 	
     $('.single .entry-header .content, #page-banner .content').css({
         position:'relative',
