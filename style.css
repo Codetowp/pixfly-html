@@ -2876,9 +2876,6 @@ ol.type li a.active {
 
 #load-More{text-align:center;}
 
-
-
-
 .hover-bg .hover-text small {
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
@@ -2903,6 +2900,7 @@ ol.type li a.active {
 }
 .hover-bg .hover-text>h2 {
 	font-size: 28px;
+	color: #fff;
 }
 .hover-bg .hover-text>h2 {
 	opacity: 0;
@@ -2982,12 +2980,23 @@ ol.type li a.active {
 	margin: 0px;
 	float: left;
 	display: inline-block;
+	overflow: hidden;
 }
 .photos .photo img {
 	display: block;
-	width: 100%;
-	object-fit: cover;
+    width: 100%;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
 }
+.photos .photo img:hover {
+    -webkit-filter: none;
+    filter: none;
+    transition-duration: 0.3s;
+    transform: scale(1.05);
+}
+
 /*page*/
 
 
