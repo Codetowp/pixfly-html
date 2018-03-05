@@ -1,6 +1,7 @@
 # pixfly-html
 HTML version of Pixfly
-Designed by dcrazed.com
+Designed by Devfloat.net
+https://devfloat.net/pixfly-html/
 
 #License
 Free for using on your website or client projects. 
