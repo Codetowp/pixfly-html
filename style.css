@@ -2861,6 +2861,9 @@ ol.type li a.active {
 .full-section .infinite-item:nth-child(even) .hover-bg .hover-text {
 	background: rgba(60,67,77,0.7)
 }
+ .full-section .infinite-item:hover:nth-child(odd) .hover-bg .hover-text{background: rgba(181,191,208,0.3);}
+ .full-section .infinite-item:hover:nth-child(even) .hover-bg .hover-text{background: rgba(60,67,77,0.3);}
+
 .full-section .hover-bg .hover-text>h2 {
 	opacity: 1;
 }
@@ -2891,6 +2894,7 @@ ol.type li a.active {
 .hover-bg .hover-text .read-well {
 	font-size: 17px;
 	font-family: 'Lato', sans-serif;
+	color:#fff;
 	font-weight: 600;
 	text-transform: uppercase;
 	-webkit-transform: translateY(100%);
@@ -3360,15 +3364,20 @@ ol.type li a.active {
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	color: #fff;
+	-webkit-transform: translateY(80%);
+	transform: translateY(80%);
 	text-decoration: underline;
 	text-transform: uppercase;
 }
+.page-article-block article .entry-header:hover h2{	transition: all 0.3s;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);}
 
 .page-article-block article a small{color:#fff;}
 
 .page-article-block article .entry-header  h2:hover {
 	opacity: 0.8;
-	transition: all 0.5s;
+	transition: all 0.3s;
 }
 .page-article-block article .entry-header .date-article {
 	color: #fff;
